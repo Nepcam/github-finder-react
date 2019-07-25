@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
+import Navbar from './components/layout/Navbar';
 import './App.css';
 
 class App extends Component {
-  render () {
-    const name = 'Cam Nepe';
-    const loading = false;
-    const showName = true;
+  render() {
     return (
-      <div className="App">
-        {loading ? <h4>Loading...</h4> : <h1>Hello {showName && name}</h1>}
+      <div className='App'>
+        <Navbar title='Github Finder' icon='fab fa-github' />
       </div>
     );
   }
 }
 
 export default App;
+
+// App.js is the parent component
